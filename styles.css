@@ -1,0 +1,162 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Or another modern sans-serif font */
+  margin: 0; /* Remove default body margins */
+  background-color: #f4f4f4; /* Light gray background */
+}
+
+#thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columns */
+  grid-template-rows: repeat(5, 1fr); /* 5 rows */
+  grid-gap: 10px; /* Adjust gap as needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px;
+  width: 125%;
+  height: 90%; /* Ensure the grid takes up the full width */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.thumbnail {
+  display: inline-block; /* Important for horizontal scrolling */
+  width: 100%;
+  height: 0; /* Initially set height to 0 */
+  padding-bottom: 100%; /* Aspect ratio 1:1 (square) */
+  background-size: cover; /* Ensure images cover the entire square */
+  background-position: center;
+  cursor: pointer;
+  transition: opacity 0.6s ease; /* Smooth opacity transition */
+  transition: filter 0.6s ease; /* Smooth filter transition */
+}
+
+/* Opacity styles for rows */
+.thumbnail:nth-child(-n+12) { /* First row */
+  opacity: 0.3; /* Slightly opaque */
+  background-color: rgba(255, 255, 255, 0.5); /* White tint */
+}
+
+.thumbnail:nth-child(n+13):nth-child(-n+24) { /* Second row */
+  opacity: 0.4; /* Slightly less opaque */
+  background-color: rgba(0, 0, 0, 1); /* Black tint */
+  filter: brightness(0.4);
+}
+
+.thumbnail:nth-child(n+25):nth-child(-n+36) { /* Third row */
+  opacity: 0.3; /* Slightly opaque */
+  background-color: rgba(255, 255, 255, 0.5); /* White tint */
+}
+
+.thumbnail:nth-child(n+37):nth-child(-n+48) { /* Fourth row */
+  opacity: 0.4; /* Slightly less opaque */
+  background-color: rgba(0, 0, 0, 1); /* Black tint */
+  filter: brightness(0.4);
+}
+
+.thumbnail:nth-child(n+49) { /* Fifth row */
+  opacity: 0.3; /* Slightly opaque */
+  background-color: rgba(255, 255, 255, 0.5); /* White tint */
+}
+
+
+/* Hover effect */
+.thumbnail:hover {
+  opacity: 1 !important; /* Full opacity on hover */
+  background-color: transparent !important; /* Remove tint on hover */
+  transition: 0.6s;
+  filter: brightness(1) !important;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%; /* Expand to fill available width */
+}
+
+#modal-image {
+  display: flex;
+}
+
+#modal-image img {
+  margin: auto;
+}
+
+/* Responsive iframe scaling for YouTube videos */
+.modal-content iframe {
+    width: 100%;
+    min-height: 500px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* White background */
+
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  display: flex;
+  justify-content: space-between; /* Distribute title and button */
+  align-items: center; /* Vertically align items */
+}
+
+#nav-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 30px;
+}
+
+#about-button {
+  padding: 8px 16px;
+  background-color: #ffffff; 
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+#about-button:hover {
+  background-color: #d3d3d3;
+}
