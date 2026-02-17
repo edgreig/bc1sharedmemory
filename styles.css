@@ -12,7 +12,7 @@ body {
   overflow-x: auto; /* Enable horizontal scrolling */
   padding: 20px;
   width: 125%;
-  height: 90%; /* Ensure the grid takes up the full width */
+  height: 85%; /* Ensure the grid takes up the full width */
   white-space: nowrap; /* Prevent text wrapping */
 }
 
@@ -103,7 +103,6 @@ body {
 .modal-content img {
     max-width: 100%;
     height: auto;
-}
 }
 
 .modal-content {
