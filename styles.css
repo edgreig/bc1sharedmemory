@@ -11,8 +11,8 @@ body {
   grid-gap: 10px; /* Adjust gap as needed */
   overflow-x: auto; /* Enable horizontal scrolling */
   padding: 20px;
-  margin-bottom: 50px;
-  width: 115%;
+  width: 125%;
+  height: 90vh;
   white-space: nowrap; /* Prevent text wrapping */
 }
 
