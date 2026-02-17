@@ -11,8 +11,8 @@ body {
   grid-gap: 10px; /* Adjust gap as needed */
   overflow-x: auto; /* Enable horizontal scrolling */
   padding: 20px;
-  width: 125%;
-  height: 85%; /* Ensure the grid takes up the full width */
+  margin-bottom: 50px;
+  width: 115%;
   white-space: nowrap; /* Prevent text wrapping */
 }
 
