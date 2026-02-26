@@ -54,6 +54,12 @@ function showModal(item) {
     modalImage.appendChild(img);
   }
 
+  if (item.link) {
+    const a = document.createElement('a');
+    a.src = item.link;
+    modalText.appendChild(a);
+  }
+
   modal.style.display = 'flex';
 }
 
