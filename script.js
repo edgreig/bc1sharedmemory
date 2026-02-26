@@ -54,10 +54,19 @@ function showModal(item) {
     modalImage.appendChild(img);
   }
 
-  if (item.link) {
-    const a = document.createElement('a');
-    a.src = item.link;
-    modalText.appendChild(a);
+  // Add the link if 'link' and 'linktext' columns exist
+  if (item.link && item.linktext) {
+    // Add a line break for separation if there's existing text
+    if (item.text) {
+      modalText.appendChild(document.createElement('br'));
+      modalText.appendChild(document.createElement('br')); // Add another for better spacing
+    }
+
+    const linkElement = document.createElement('a');
+    linkElement.href = item.link;
+    linkElement.textContent = item.linktext;
+    linkElement.target = '_blank'; // Open link in a new tab
+    modalText.appendChild(linkElement);
   }
 
   modal.style.display = 'flex';
