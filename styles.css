@@ -28,29 +28,29 @@ body {
 }
 
 /* Opacity styles for rows */
-.thumbnail:nth-child(-n+12) { /* First row */
+.thumbnail:nth-child(-n+14) { /* First row */
   opacity: 0.3; /* Slightly opaque */
   background-color: rgba(255, 255, 255, 0.5); /* White tint */
 }
 
-.thumbnail:nth-child(n+13):nth-child(-n+24) { /* Second row */
+.thumbnail:nth-child(n+15):nth-child(-n+28) { /* Second row */
   opacity: 0.4; /* Slightly less opaque */
   background-color: rgba(0, 0, 0, 1); /* Black tint */
   filter: brightness(0.4);
 }
 
-.thumbnail:nth-child(n+25):nth-child(-n+36) { /* Third row */
+.thumbnail:nth-child(n+29):nth-child(-n+42) { /* Third row */
   opacity: 0.3; /* Slightly opaque */
   background-color: rgba(255, 255, 255, 0.5); /* White tint */
 }
 
-.thumbnail:nth-child(n+37):nth-child(-n+48) { /* Fourth row */
+.thumbnail:nth-child(n+43):nth-child(-n+56) { /* Fourth row */
   opacity: 0.4; /* Slightly less opaque */
   background-color: rgba(0, 0, 0, 1); /* Black tint */
   filter: brightness(0.4);
 }
 
-.thumbnail:nth-child(n+49) { /* Fifth row */
+.thumbnail:nth-child(n+57) { /* Fifth row */
   opacity: 0.3; /* Slightly opaque */
   background-color: rgba(255, 255, 255, 0.5); /* White tint */
 }
