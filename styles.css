@@ -136,6 +136,7 @@ body {
   font-weight: bold;
   font-size: 3vh;
   padding: 30px;
+  min-width: 50%;
 }
 
 #about {
@@ -143,6 +144,7 @@ body {
   background-color: #ffffff; 
   color: #6d6d6d;
   font-size: 1.5vh;
+  max-width: 50%;
 }
 
 #about a {
