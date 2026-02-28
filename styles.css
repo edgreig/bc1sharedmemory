@@ -10,8 +10,8 @@ body {
   grid-template-rows: repeat(5, 1fr); /* 5 rows */
   grid-gap: 10px; /* Adjust gap as needed */
   overflow-x: auto; /* Enable horizontal scrolling */
-  padding: 20px;
-  height: 90vh;
+  padding: 10px 20px;
+  height: 89vh;
   white-space: nowrap; /* Prevent text wrapping */
 }
 
@@ -142,10 +142,22 @@ body {
   padding: 8px 16px;
   background-color: #ffffff; 
   color: #6d6d6d;
+  font-size: 1.5vh;
 }
 
-#about {
+#about a {
   font-weight: 600;
   color: #6d6d6d;
   text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  #nav-title {
+  font-size: 1vh;
+  padding: 5px;
+}
+
+#about {
+  font-size: 0.5vh;
+  }
 }
