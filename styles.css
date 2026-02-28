@@ -29,29 +29,29 @@ body {
 
 /* Opacity styles for rows */
 .thumbnail:nth-child(-n+14) { /* First row */
-  opacity: 0.65; /* Slightly opaque */
+  opacity: 0.45; /* Slightly opaque */
   background-color: rgba(255, 255, 255, 0.5); /* White tint */
 }
 
 .thumbnail:nth-child(n+15):nth-child(-n+28) { /* Second row */
-  opacity: 0.75; /* Slightly less opaque */
+  opacity: 0.55; /* Slightly less opaque */
   background-color: rgba(0, 0, 0, 1); /* Black tint */
-  filter: brightness(0.7);
+  filter: brightness(0.5);
 }
 
 .thumbnail:nth-child(n+29):nth-child(-n+42) { /* Third row */
-  opacity: 0.65; /* Slightly opaque */
+  opacity: 0.45; /* Slightly opaque */
   background-color: rgba(255, 255, 255, 0.5); /* White tint */
 }
 
 .thumbnail:nth-child(n+43):nth-child(-n+56) { /* Fourth row */
-  opacity: 0.75; /* Slightly less opaque */
+  opacity: 0.55; /* Slightly less opaque */
   background-color: rgba(0, 0, 0, 1); /* Black tint */
-  filter: brightness(0.7);
+  filter: brightness(0.5);
 }
 
 .thumbnail:nth-child(n+57) { /* Fifth row */
-  opacity: 0.65; /* Slightly opaque */
+  opacity: 0.45; /* Slightly opaque */
   background-color: rgba(255, 255, 255, 0.5); /* White tint */
 }
 
