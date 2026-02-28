@@ -82,7 +82,7 @@ body {
   padding: 20px;
   margin: auto;
   border: 1px solid #888;
-  /* width: 80%; Expand to fill available width */
+  max-width: 90%;
 }
 
 #modal-image {
