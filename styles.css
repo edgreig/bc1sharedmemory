@@ -100,7 +100,8 @@ body {
 }
 
 .modal-content img {
-    height: 80vh;
+    max-width: 100%;
+    max-height: 80vh;
 }
 
 .close {
