@@ -11,7 +11,7 @@ body {
   grid-gap: 10px; /* Adjust gap as needed */
   overflow-x: auto; /* Enable horizontal scrolling */
   padding: 10px 20px;
-  height: 89vh;
+  height: 85vh;
   white-space: nowrap; /* Prevent text wrapping */
 }
 
@@ -152,6 +152,14 @@ body {
 }
 
 @media (min-width: 600px) {
+  #thumbnail-grid {
+  height: 80vh;
+  }
+
+  .thumbnail {
+  width: 14vh;
+  height: 14vh;}
+
   #nav-title {
   font-size: 2.5vh;
   padding: 20px;
